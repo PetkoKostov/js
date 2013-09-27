@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="theme/jquery-ui-1.10.3.custom.css" />  <!--Point to the ui theme-->
+    <link rel="stylesheet" type="text/css" media="screen" href="theme/ui.jqgrid.css" />    <!--Point to the  jqGrid css-->
+    <script src="grid.locale-en.js" type="text/javascript"></script>   <!--Point to the  jqGrid language file-->
+    <script src="jquery.jqGrid.min.js" type="text/javascript"></script>   <!--Point to the  jqGrid -->
+
+    <script type="text/JavaScript" src="jqgrid_table_php.js"></script>
+    <script type="text/JavaScript" src="jquery.ba-bbq.js"></script>     <!--Point to my jquery ba-bbq -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />  <!--Point to my CSS-->
+
+    <style>
+         body {background-image:url("wood_background.jpg");}
+    </style>
+
+    <title>Another Example of maine using PHP query to the DB</title>
+</head>
+<body>
+ <h1>JQGrid Table using PHP query to the DB [upgraded with tabs]</h1>
+
+ <ul id="tabs">
+     <li><a id="my_session" href="#session">Tab:  [newmg.session]</a></li>
+     <li><a id="my_user_log" href="#user_log">Tab: [newmg.user & newmg.log]</a></li>
+ </ul>
+ <br><br><br>
+
+
+
+
+
+
+ <!--    ------------My Tables------------  -->
+ <div class = "my_content">
+
+ <div id="session">
+ <table id="my_table_1"></table>
+ <div id="my_pager_1"></div>
+</div>
+
+
+
+ <div id="user_log">
+     <table id="my_table_2"></table>
+     <div id="my_pager_2"></div>
+ </div>
+
+</div> <!--End div my_content-->
+</body>
+</html>
